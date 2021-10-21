@@ -123,22 +123,183 @@ numero++
 console.log(numero)
 
 #6 Como dividir o peso por 2?
-
-
-
-*/
-//testes
-
-//var nome = 'luca',
-//nome = "carlos",
-//nome = `jose`;
-//var preco = null
-//var nomePreco = nome + preco
-//var preco;
-//var nomePreco = nome + preco
-
 var numero = +'80' / 2;
 var unidade = 'kg';
 var peso = numero + unidade 
 var pesoPorDois = peso 
 console.log(pesoPorDois);
+________________________________________________________________________________________________
+
+Boolean e condicionais
+Um dado do tipo boolean pode ter dois valores :
+true e false.
+
+var estaFrio = true;
+var estaCalor = false;
+
+Laços condicionais
+Através da estrutura if e else você pode criar laços condicionais. Exemplo:
+var estaCalor = true;
+
+var estaCalor = true;
+
+if(estaCalor){ - se for true faça :
+    console.log('Passe protetor');
+} else { senão, faça :
+    console.log('Fique de boas');
+
+}
+Obs* O valor dentro dos parênteses sempre sempre será avaliado em false ou true.
+
+Além disso, existe também o else if, se o if não for verdadeiro ele testa o else if
+
+var estaCalor = true;
+var estaFrio = false;
+
+if(estaCalor){ - se for true faça :
+    console.log('Passe protetor');
+} else if(estaFrio) { 
+    console.log('Fique de boas');
+} else {
+    console.log('Bota casaco')
+}
+
+Truthy e Falsy
+Existem valores que retornam true e outros que retornam false quando verificados em uma expressão booleana.
+
+Falsy
+if (false) - falsy
+if (0) - falsy (-0 também é falsy)
+if(NaN) - falsy
+if (Null) - falsy
+if(undefined) - falsy
+if('') - falsy
+
+Truthy
+if (true) - truthy
+if (1) - truthy 
+if(' ') - truthy (o espaço conta como caractere, logo, retorna true)
+if ('luca') - truthy
+if(-5) - truthy (números negativos retornam true)
+if({}) - truthy
+
+Operador de negação
+O operador ! nega uma operação booleana. Ou seja, !true na verdade não é true, é false.
+
+if(!true) - false
+if(!false) - true
+if(!0) - true
+if(!'luca') false
+
+* Dica -Você pode utilizar o operador de negação duas vezes !! para verificar se uma expressão é truthy ou falsy.
+
+Operadores de compração
+Sempre retornarão um valor boolean.
+10 > 5 = true
+10 < 5 = false
+10 <= 10 = true
+10 >= 9 = true
+
+Existe também o '==' e o '==='. Ambos fazem comparação, mas a comparação com o === é mais estrita.
+10 == '10' = true (converte o que há dentro das '')
+10 === '10' = false (tipos diferentes, não tenta converter o que há dentro das '')
+
+
+Operadores Lógicos
+&& (e) 
+Compara se uma expressão E a outra são verdadeiras. Se ambos os valores forem true ele irá retornar o último valor verificado. Se algum dos valores for false já retornará false sem verificar os restantes.
+
+true && true = true
+true && false = false
+'Gato' && 'Cão' = 'Cão'
+
+|| (ou)
+Compara se uma expressão OU a outra é verdadeira. Retorna o primeiro valor true que encontrar.
+
+true && true = true
+true && false = true
+'Gato' && 'Cão' = 'Gato'
+
+Switch
+Com o switch você pode verificar se uma variável é igual à diferentes valores utilizando o case. Caso ela seja igual, você pode fazer alguma coisa e utilizar a palavra chave break; para cancelar a continuação. O valor de default ocorrerá caso nenhuma das anteriores seja verdadeira
+
+var corFavorita = 'preto';
+
+switch(corFavorita){
+    case 'preto':
+        console.log('Essa mesmo');
+        break;
+    case 'vermelho':
+        console.log('cor das rosas');
+        break;
+    case 'amarelo':
+        console.log('cor do sol');
+        break;
+    default:
+        console.log('nenhuma das anteriores');
+}
+
+
+Exercícios 
+
+#1 Verifique se a sua idade é maior que a de algum parente
+var minhaIdade = 20;
+var idadeParente = 34;
+
+if(minhaIdade > idadeParente){
+    console.log('Sou mais velho');
+} else if (minhaIdade === idadeParente) {
+    console.log('Mesma idade');
+} else {
+    console.log('Sou mais novo');
+}
+
+#2 Qual valor é retornado na seguinte expressão
+var expressao = (5-2) && (5 - ' ') && (5 - 2);
+R.: 3
+
+#3 Verifique se as seguintes variáveis são truthy ou falsy
+var nome = 'luca'; - Truthy
+var idade = 28; - truthy
+var possuiDoutorado = false; - falsy
+var comidaFavorita; - falsy (undefined)
+var dinheiroNaConta = 0; - falsy
+
+#4 Compare o total de habitantes do Brasil com China;
+var popBrasil = 212
+var popChina = 1.402;
+
+if(popBrasil === popChina){
+    console.log('Mesma quantidade de habitantes');
+} else {
+    console.log('Populações diferentes');
+}
+
+#5 O que irá aparecer no console?
+if(('Gato' === 'gato') && (5 > 2)){
+    console.log('Verdadeiro');
+} else {
+    console.log('Falso');
+}
+R.: Falso
+
+#6 O que irá aparecer no console?
+if(('Gato' === 'gato') || (5 > 2)){
+    console.log('Gato' && 'Cão');
+} else {
+    console.log('Falso');
+}
+R.: Cão
+*/
+
+
+/*testes
+
+var nome = 'luca',
+nome = "carlos",
+nome = `jose`;
+var preco = null
+var nomePreco = nome + preco
+var preco;
+var nomePreco = nome + preco
+*/
