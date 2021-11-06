@@ -32,7 +32,7 @@ Chamadas de Callback são funções que ocorrem após algum evento. Veja...
 addEventListener('click', function (){
     console.log('Olá');
 })
-addEventListener é uma função, e tem dois parâmetros, o primeiro é uma string que define o tipo de evento que irá ocorrer, ou seja, um evento de clique. O segundo parâmetro diz o que ocorrerá ao acontecer o clique. Essa função não nomeada é chamada de função anônima. Você também poderia fazer isso :
+addEventListener é uma função, e tem dois parâmetros, o primeiro é uma string que define o tipo de evento que irá ocorrer, ou seja, um evento de clique. O segundo parâmetro é a Callback. Essa função não nomeada é chamada de função anônima. Você também poderia fazer isso :
 
 function digaOi (){
     console.log('Olá');
@@ -91,6 +91,53 @@ function imc (peso,altura){
     const imc = peso / (altura ** 2);
     console.log(imc);
 }
+
+
+Exercícios 
+
+#1 Crie uma função para verificar se um valor é truthy.
+function verificaTruthy (numero){
+   return !!numero;
+}
+verificaTruthy(2);
+
+
+#2 Crie uma função matemática que retorne o perímetro de um quadrado (lembrando que o perímetro é a soma dos quatro lados do quadrado)
+function perimetroQuadrado (lado){
+    return lado*4;
+}
+console.log(perimetroQuadrado(3));
+
+#3 Crie uma função que retorne o seu nome completo(ela deve possuir os parâmetros nome e sobrenome)
+function nomeCompleto(nome,sobrenome){
+    return `Meu nome completo é ${nome} ${sobrenome}`;
+}
+console.log(nomeCompleto('Luca','Clemente'));
+
+#4 Crie uma função que verifique se um número é par
+function verificarPar(numero){
+    if(numero % 2 === 0){
+        console.log('É par');
+    }else{
+        console.log('É impar')
+    }
+}
+verificarPar(5);
+
+#5 Crie uma função que retorne o tipo de dado do argumento passado nela
+
+function tipoDado(numero){
+const tipo = typeof numero;
+return tipo;
+}
+console.log(tipoDado(5));
+
+#6 addEventListener é uma função nativa do JavaScript. O primeiro parâmetro é o evento que ocorrerá e o segundo o CallBack. Utilize essa função para mostrar no console o seu nome completo quando o evento 'scroll' acontecer.
+
+function nomeCompleto(){
+    console.log('Luca Clemente dos Santos Cruz');
+}
+addEventListener('scroll', nomeCompleto);
 */ 
 
 
@@ -105,3 +152,38 @@ function imc (peso,altura){
     console.log(imc);
 }
 console.log(imc(80,1.90))
+
+function verificaTruthy (numero){
+    return !!numero;
+ }
+ verificaTruthy(2);
+
+ function perimetroQuadrado (lado){
+    return lado*4;
+}
+console.log(perimetroQuadrado(3));
+
+function nomeCompleto(nome,sobrenome){
+    return `Meu nome completo é ${nome} ${sobrenome}`;
+}
+console.log(nomeCompleto('Luca','Clemente'));
+
+function verificarPar(numero){
+    if(numero % 2 === 0){
+        console.log('É par');
+    }else{
+        console.log('É impar')
+    }
+}
+verificarPar(5);
+
+function tipoDado(numero){
+    const tipo = typeof numero;
+    return tipo;
+    }
+    console.log(tipoDado(5));
+
+    function nomeCompleto(){
+        console.log('Luca Clemente dos Santos Cruz');
+    }
+    addEventListener('scroll', nomeCompleto);
