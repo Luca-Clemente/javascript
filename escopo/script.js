@@ -144,7 +144,7 @@ for(var numero = 0; numero < 10; numero++){
 }
 
 R.: 
-var numero = 50;
+const numero = 50;
 
 for(let numero = 0; numero < 10; numero++){
     console.log(numero);
