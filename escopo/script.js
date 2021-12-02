@@ -105,7 +105,13 @@ Exercícios
 }
 console.log(var, marca, portas);
 
-R.: O código acima apresenta erros pois você está tentando mostrar no console uma variável de nome 'var' mas 'var' é uma palavra reservada para declaração de variáveis.
+R.: O código acima apresenta erros pois você está tentando mostrar no console uma variável de nome 'var' mas 'var' é uma palavra reservada para declaração de variáveis. Além disso, por se tratar de um escopo de bloco, const e let não podem ser acessadas fora desse escopo, portanto, utilize o console.log(cor,marca,portas) dentro do bloco :
+{
+    var cor = 'preto';
+    const marca = 'fiat';
+    let portas = 4;
+    console.log(cor, marca, portas);
+}
 
 #2 Como corrigir o erro abaixo?
 function somarDois(x){
@@ -118,7 +124,17 @@ function dividirDois(x){
 somarDois(4);
 dividirDois(6);
 
-R.: Mudar a palavra reservada 'const' para 'let'.
+R.: É necessário retirar a variável 'dois' do escopo da função e modificar o operador na função 'dividirDois' :
+
+const dois = 2;
+function somarDois(x){
+    return x + dois;
+}
+function dividirDois(x){
+    return x / dois;
+}
+somarDois(4);
+dividirDois(6);
 
 #3 O que fazer para total retornar 500?
 var numero = 50;
@@ -136,6 +152,7 @@ for(let numero = 0; numero < 10; numero++){
 numero *= 10;
 console.log(numero);
 */
+
 function mostrarCarro(){
     var carro = 'Fusca';
     console.log(carro);
