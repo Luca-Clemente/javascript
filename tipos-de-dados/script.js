@@ -1,8 +1,8 @@
 /*
-Existem 7 tipos de dados em Javascript e 6 deles são primitivos, ou seja, são imutáveis. Objetos são o único tipo de dado que não é primitivo. 
+Existem 7 tipos de dados em Javascript e 6 deles são primitivos, ou seja, são imutáveis. Objetos é o único tipo de dado que não é primitivo. 
 
 var nome = 'luca' - string
-var idade = 20 - idade 
+var idade = 20 - number
 var estaBarato = true - boolean
 var preco - undefined
 var pao = null - null
@@ -16,7 +16,7 @@ ________________________________________________________________________________
 
 String
 
-Strings são conjunto de caracteres, uma frase, uma letra etc.
+Strings são conjuntos de caracteres,pode ser uma frase, uma letra etc.
 Você pode inserir conteúdo dentro de três tipos de aspas.
 '' - simples
 "" - duplas
@@ -29,9 +29,9 @@ console.log('luca tem' + idade + 'anos');
 Você pode escrever :
 console.log(`luca tem ${idade} anos`)
 
-Essa é sintaxe usada quando você irá inserir uma expressão ou variável dentro de uma template string. É uma sintaxe mais enxuta.
+Essa sintaxe é usada quando você inserir uma expressão ou variável dentro de uma template string. É uma sintaxe mais enxuta.
 
-Obs* Caso você some uma variável com tipo number com uma variável de tipo string, o typeof será string.
+Nota : Caso você some uma variável com tipo number com uma variável de tipo string, o typeof será string.
 
 Exercícios
 
@@ -90,7 +90,7 @@ console.log(idade) - 5
 idade++ - incrementa um
 console.log(idade) - 6
 
-Agora, se você utilizar somente um + ou - antes da variável esse operador tentará transformar o valor em number.
+Agora, se você utilizar somente um (+) ou um (-) antes da variável esse operador tentará transformar o valor em number.
 
 var frase = 'frase';
 +frase - NaN
@@ -100,7 +100,7 @@ var idade = '28';
 +idade - 28 (number)
 -idade - -28 (number)
 
-Vale lembrar que em manuseio de numbers a ordem importa. Logo, multiplicação e divisão acontecem primeiro e posteriormente soma e subtração. Caso queira priorizar utilize os parênteses ().
+Vale lembrar que em manuseio de numbers a ordem importa. Logo, multiplicação e divisão acontecem primeiro e posteriormente soma e subtração. Caso queira priorizar uma conta utilize os parênteses ().
 
 Exercícios
 
@@ -139,7 +139,6 @@ var estaCalor = false;
 
 Laços condicionais
 Através da estrutura if e else você pode criar laços condicionais. Exemplo:
-var estaCalor = true;
 
 var estaCalor = true;
 
