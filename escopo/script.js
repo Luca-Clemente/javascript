@@ -37,12 +37,12 @@ Escopo de bloco
 Variáveis criadas com a palavra reservada 'var' "vazam" do bloco. Por isso, com a introdução do ES6 a melhor forma de declararmos uma variável é utilizando const e let, pois estas respeitam o escopo de bloco. Vejamos :
 
 if(true){
-    var objeto - 'lapis';
+    var objeto = 'lapis';
     console.log(objeto);
 }
 console.log(objeto) //- lapis
 
-Mesmo com a condição falsa, a variável ainda será declarada por conta do hoisting e o valor será undefined.
+Mesmo com a condição falsa, a variável ainda será declarada por conta do hoisting e o valor seria undefined.
 
 if(false) {
     var banda = 'Lagum';
