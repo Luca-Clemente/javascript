@@ -9,7 +9,7 @@ palavra reservada 'function' <nomeDaFuncao>' (parametros) {
 
 } 
 nomeDaFuncao(argumentos)
-Obs.: Para executar a função utilize os parênteses. Se você apenas chamasse a função, mas sem os parênteses você não executaria ela e nada que estivesse dentro dela iria acontecer.
+Obs.: Para executar a função utilize os parênteses. Se você apenas chamar a função, mas sem os parênteses você não executará ela e nada que estiver dentro dela irá acontecer.
 
 Parâmetros e argumentos 
 Uma função pode ou não ter parâmetros e argumentos. 
