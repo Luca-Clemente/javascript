@@ -1,7 +1,7 @@
 /*
 Array
 
-Um array é uma coleção de itens, normalmente eles são relacionados. Eles servem para guardarmos diferentes valores em uma única variável. Exemplo :
+Um array é uma coleção de itens, normalmente relacionados. Eles servem para guardarmos diferentes valores em uma única variável. Exemplo :
 
 var frutas = ['manga','banana','abacate','morango']
 
