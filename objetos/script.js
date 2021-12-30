@@ -14,7 +14,7 @@ pessoa.possuiFaculdade - true
 
 
 
-O nosso objeto se chama pessoa. Dentro desse objeto existem as propriedades (nome,idade,profissao e possuiFaculdade) cada um com um valor.
+O nosso objeto se chama pessoa. Dentro desse objeto existem as propriedades (nome,idade,profissao e possuiFaculdade) cada uma com um valor.
 Para acessarmos as propriedades do objeto utilizamos o .(essa notação se chama Dot Notation Get). E, para separarmos as propriedades nós usamos a , .
 ______________________________________________________________________________________________________________________
 Métodos
