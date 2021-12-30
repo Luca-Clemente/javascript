@@ -13,7 +13,7 @@ Como nomear uma variável:
 - Os nomes podem iniciar com $, _ ou letras, logo - var $luca = '✔️', var luca = '✔️', var _luca = '✔️'
 - Não utilize palavras reservadas, logo - var const = '❌';
 - Utilize o padrão camelCase, logo - var mostrarModal, var abrirCartao
-- Os nomes das variáveis é Case Sensitive, logo - nome e Nome são diferentes.
+- Os nomes das variáveis são Case Sensitive, logo - nome e Nome são diferentes.
 
 Alguns pontos :
 Se você criar uma variável e não declarar valor - var luca; 
